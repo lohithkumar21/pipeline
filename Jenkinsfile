@@ -1,7 +1,8 @@
 pipeline {
     agent {
         docker {
-            image 'python:3.12'  // Using Python Docker image with pip pre-installed
+            image 'python:3.9'  // Example Docker image to use
+            label 'docker'      // Specify a label for the executor
         }
     }
 
