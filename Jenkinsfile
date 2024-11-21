@@ -1,5 +1,9 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'python:3.12'  // Using Python Docker image with pip pre-installed
+        }
+    }
 
     stages {
         stage('Build') {
